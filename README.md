@@ -49,9 +49,8 @@ django-ds-portfolio/
 │── README.md               # Documentation
 │── requirements.txt        # Dependencies
 │── manage.py               # Django management script
-📌 Live Demo (If Available)
-🔗 Live Website
 
+🔗 Live Website : https://poojajaiswa.github.io/My_Portfolio/
 🤝 Contributing
 Feel free to fork this repository, create a feature branch, and submit a pull request. Any suggestions for improvements are welcome!
 
