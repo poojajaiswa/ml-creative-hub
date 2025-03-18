@@ -1,0 +1,181 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 33% 17%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 224 76% 48%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-semibold tracking-tight;
+  }
+
+  /* Improved scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-blue-900 hover:bg-blue-700 transition-colors;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-slate-900/80 backdrop-blur-md border border-slate-700/50 shadow-lg;
+  }
+  
+  .link-hover {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-blue-500 
+    after:transition-all after:duration-300 hover:after:w-full;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .futuristic-border {
+    @apply relative;
+  }
+
+  .futuristic-border::before {
+    @apply content-[''] absolute -inset-[1px] bg-gradient-to-r from-blue-500 to-cyan-400 rounded-lg opacity-0 transition-opacity duration-300 -z-10;
+  }
+
+  .futuristic-border:hover::before {
+    @apply opacity-100;
+  }
+
+  .data-pulse {
+    @apply relative;
+  }
+
+  .data-pulse::after {
+    @apply content-[''] absolute w-full h-0.5 left-0 bg-blue-500 opacity-0;
+    animation: dataPulse 3s ease-in-out infinite;
+  }
+
+  @keyframes dataPulse {
+    0% { top: 0; opacity: 0.1; }
+    50% { top: 100%; opacity: 0.7; }
+    100% { top: 0; opacity: 0.1; }
+  }
+
+  .neural-grid {
+    background-image: 
+      linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  /* New glowing text effect */
+  .glow-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 relative;
+    text-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+  }
+  
+  /* New data flow effect */
+  .data-flow {
+    @apply relative overflow-hidden;
+  }
+  
+  .data-flow::after {
+    @apply content-[''] absolute h-px w-[30%] bg-gradient-to-r from-transparent via-blue-500 to-transparent left-0 top-0;
+    animation: dataFlow 3s ease-in-out infinite;
+  }
+  
+  @keyframes dataFlow {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(450%); }
+  }
+  
+  /* Matrix rain effect */
+  .matrix-rain {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .matrix-rain::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 2px;
+    height: 50px;
+    background-color: rgba(56, 189, 248, 0.5);
+    filter: blur(1px);
+    animation: matrixRain 8s linear infinite;
+    animation-delay: calc(var(--delay) * 1s);
+    transform: translateX(calc(var(--x) * 1px));
+  }
+  
+  @keyframes matrixRain {
+    0% { top: -100px; }
+    100% { top: calc(100% + 100px); }
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes rotate-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+.animate-rotate-slow {
+  animation: rotate-slow 20s linear infinite;
+}
