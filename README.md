@@ -1,77 +1,64 @@
+# Django Data Science Portfolio
 
-# Welcome to ML Creative Hub
+Welcome to my **Django Data Science Portfolio**! 🚀 This project serves as a personal showcase of my work in **Data Science, AI, and Machine Learning**, featuring projects that demonstrate my skills in **data analysis, model development, and AI applications**.
 
-A professional data science and machine learning portfolio showcasing projects, skills, and expertise.
+## 🔥 Features
 
-## Project info
+- **Interactive Dashboard**: View data visualizations, model results, and insights.
+- **Machine Learning Models**: Deployed models for predictive analytics and AI applications.
+- **Project Showcase**: Screenshots, project descriptions, datasets, and GitHub links.
+- **User Authentication**: Secure signup/login functionality (if applicable).
+- **Responsive UI**: A clean and modern web design for easy navigation.
 
-**URL**: https://lovable.dev/projects/593bd0ce-84e8-4124-9b54-5b83bb7a7e06
+## 🛠️ Technologies Used
 
-## Installation
+- **Backend**: Django, Django REST Framework
+- **Frontend**: HTML, CSS, Bootstrap (or any framework you used)
+- **Database**: MariaDB / PostgreSQL / MySQL (Specify which one you used)
+- **Machine Learning**: Scikit-learn, TensorFlow, PyTorch, or others (Mention relevant libraries)
+- **Data Visualization**: Matplotlib, Seaborn, Plotly, Power BI (if applicable)
+- **Hosting**: (Specify if deployed on Render, Heroku, AWS, etc.)
 
-For detailed installation instructions, please see the [Installation Guide](INSTALLATION.md).
+## 🚀 Installation & Setup
 
-## How can I edit this code?
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
 
-There are several ways of editing your application.
+To set up the project on your local machine, follow these steps:
 
-**Use Lovable**
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/your-username/django-ds-portfolio.git
+   cd django-ds-portfolio
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/593bd0ce-84e8-4124-9b54-5b83bb7a7e06) and start prompting.
+📂 Project Structure
+csharp
+Copy
+Edit
+django-ds-portfolio/
+│── website/
+│   ├── templates/          # HTML files
+│   ├── static/             # CSS, JS, images
+│   ├── models.py           # Database models
+│   ├── views.py            # Logic and APIs
+│   ├── urls.py             # URL routing
+│   ├── settings.py         # Django settings
+│── datasets/               # Sample datasets
+│── notebooks/              # Jupyter notebooks
+│── README.md               # Documentation
+│── requirements.txt        # Dependencies
+│── manage.py               # Django management script
+📌 Live Demo (If Available)
+🔗 Live Website
 
-Changes made via Lovable will be committed automatically to this repo.
+🤝 Contributing
+Feel free to fork this repository, create a feature branch, and submit a pull request. Any suggestions for improvements are welcome!
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+📧 Contact Me
+If you have any questions or would like to collaborate, feel free to reach out:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-- Framer Motion
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/593bd0ce-84e8-4124-9b54-5b83bb7a7e06) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+Email: iampoojajaiswal7440@gmail.com
+LinkedIn: https://www.linkedin.com/in/poojajaiswal88/
+GitHub: https://github.com/poojajaiswa
