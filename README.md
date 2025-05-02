@@ -59,5 +59,7 @@ Feel free to fork this repository, create a feature branch, and submit a pull re
 If you have any questions or would like to collaborate, feel free to reach out:
 
 Email: iampoojajaiswal7440@gmail.com
+
 LinkedIn: https://www.linkedin.com/in/poojajaiswal88/
+
 GitHub: https://github.com/poojajaiswa
