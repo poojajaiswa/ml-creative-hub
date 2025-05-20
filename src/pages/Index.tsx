@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Background from "@/components/Background";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Experience from "@/components/Experience";
 import ProjectList from "@/components/ProjectList";
 import Certificates from "@/components/Certificates";
 import Contact from "@/components/Contact";
@@ -27,6 +28,7 @@ const Index = () => {
         <Navbar />
         <main>
           <Hero />
+          <Experience />
           <ProjectList />
           <Certificates />
           <Contact />
