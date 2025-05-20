@@ -1,471 +1,492 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Science Portfolio - Pooja Jaiswal</title>
-    <meta name="description" content="Pooja Jaiswal - Data Scientist & ML Engineer Portfolio" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  </head>
-  <body>
-    <!-- Background -->
-    <div class="background"></div>
-    
-    <!-- Navigation -->
-    <header class="navbar">
-      <div class="container">
-        <div class="navbar-content">
-          <a href="#home" class="logo">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Science Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Background Effect -->
+  <div class="background">
+    <!-- Background elements will be added by JavaScript -->
+  </div>
+
+  <!-- Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-slate-900/60 border-b border-slate-700/30">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="#home" class="logo-link">
             <div class="logo-icon">
-              <i class="fa-solid fa-brain"></i>
+              <i class="fas fa-brain"></i>
+              <div class="logo-pulse"></div>
             </div>
-            <span class="logo-text">Data<span class="text-blue">Sci</span></span>
+            <span class="logo-text">Data<span class="text-highlight">Sci</span></span>
           </a>
-          
-          <nav class="nav-desktop">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#experience" class="nav-link">Experience</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#contact" class="nav-link">Contact</a>
-          </nav>
-          
-          <button class="mobile-menu-btn">
-            <i class="fa-solid fa-bars" id="menu-icon"></i>
-            <i class="fa-solid fa-xmark" id="close-icon" style="display: none;"></i>
-          </button>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars" id="menu-icon"></i>
+          <i class="fas fa-times" id="close-icon" style="display: none;"></i>
         </div>
       </div>
-      
-      <!-- Mobile Menu -->
-      <div class="mobile-menu">
-        <div class="container">
-          <a href="#home" class="mobile-nav-link">Home</a>
-          <a href="#experience" class="mobile-nav-link">Experience</a>
-          <a href="#projects" class="mobile-nav-link">Projects</a>
-          <a href="#contact" class="mobile-nav-link">Contact</a>
-        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-container">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#experience" class="mobile-nav-link">Experience</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
       </div>
-    </header>
-    
-    <main>
-      <!-- Hero Section -->
-      <section id="home" class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-icon animate-float">
-              <i class="fa-solid fa-brain"></i>
-            </div>
-            
-            <div class="badge">
-              <div class="badge-content">
-                <span class="pulse-dot"></span>
-                Artificial Intelligence & Machine Learning
-              </div>
-            </div>
-            
-            <h1 class="hero-title">
-              <span class="gradient-text">Pooja Jaiswal</span>
-              <div class="hero-subtitle">Data Scientist & ML Engineer</div>
-            </h1>
-            
-            <p class="hero-description">
-              Exploring the frontiers of data science and neural networks to unlock
-              insights and build predictive models that solve tomorrow's challenges.
-            </p>
-            
-            <div class="hero-buttons">
-              <a href="#projects" class="btn btn-primary">
-                <i class="fa-solid fa-network-wired"></i>
-                Explore Projects
-              </a>
-              <a href="#contact" class="btn btn-secondary">
-                <i class="fa-solid fa-database"></i>
-                Connect
-              </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <div class="badge-content">
+              <i class="fas fa-brain"></i>
+              Data Scientist
             </div>
           </div>
+          <h1 class="hero-title">
+            Advanced <span class="text-gradient">Data Science</span> Solutions
+          </h1>
+          <p class="hero-description">
+            Transforming complex data into actionable insights through machine learning, 
+            predictive analytics, and deep neural networks.
+          </p>
           
-          <a href="#projects" class="scroll-down">
-            <i class="fa-solid fa-chevron-down"></i>
-          </a>
+          <div class="hero-cta">
+            <a href="#projects" class="cta-button primary">
+              <span>View Projects</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="cta-button secondary">
+              <span>Contact Me</span>
+            </a>
+          </div>
+          
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-value">5+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-value">50+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-value">99%</div>
+              <div class="stat-label">Client Satisfaction</div>
+            </div>
+          </div>
         </div>
         
-        <div class="data-side-right"></div>
-        <div class="data-side-left"></div>
-      </section>
-      
-      <!-- Experience Section -->
-      <section id="experience" class="experience">
-        <div class="container">
-          <div class="section-header">
-            <div class="badge">
-              <div class="badge-content">
-                <i class="fa-solid fa-briefcase"></i>
-                Career Path
-              </div>
+        <div class="hero-image-container">
+          <div class="hero-image">
+            <div class="data-visualization">
+              <!-- Data visualization elements will be added by JavaScript -->
             </div>
-            
-            <h2 class="section-title">
-              <span class="gradient-text">Professional</span> Experience
-            </h2>
-            
-            <p class="section-description">
-              My journey through the world of data science, analytics, and machine learning,
-              solving real-world problems with data-driven approaches.
-            </p>
+            <div class="image-overlay"></div>
           </div>
-          
-          <div class="experience-list">
-            <!-- Experience Card 1 -->
-            <div class="experience-card">
-              <div class="experience-header">
-                <div class="experience-title">
-                  <h3>Senior Data Scientist</h3>
-                  <span class="experience-period">
-                    <i class="fa-regular fa-calendar"></i>
-                    2021 - Present
-                  </span>
-                </div>
-                <p class="experience-company">TechInnovate Inc.</p>
-              </div>
-              <div class="experience-content">
-                <p class="experience-description">Leading a team of data scientists in developing ML models for predictive analytics. Implemented natural language processing solutions that increased customer engagement by 35%.</p>
-                <div class="skills-list">
-                  <span class="skill-tag">Python</span>
-                  <span class="skill-tag">TensorFlow</span>
-                  <span class="skill-tag">PyTorch</span>
-                  <span class="skill-tag">NLP</span>
-                  <span class="skill-tag">Team Leadership</span>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Experience Card 2 -->
-            <div class="experience-card">
-              <div class="experience-header">
-                <div class="experience-title">
-                  <h3>Data Scientist</h3>
-                  <span class="experience-period">
-                    <i class="fa-regular fa-calendar"></i>
-                    2018 - 2021
-                  </span>
-                </div>
-                <p class="experience-company">DataVision Analytics</p>
-              </div>
-              <div class="experience-content">
-                <p class="experience-description">Developed and deployed machine learning models for customer segmentation and churn prediction. Created interactive dashboards for real-time data visualization.</p>
-                <div class="skills-list">
-                  <span class="skill-tag">Python</span>
-                  <span class="skill-tag">Scikit-learn</span>
-                  <span class="skill-tag">Pandas</span>
-                  <span class="skill-tag">SQL</span>
-                  <span class="skill-tag">Tableau</span>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Experience Card 3 -->
-            <div class="experience-card">
-              <div class="experience-header">
-                <div class="experience-title">
-                  <h3>Data Analyst</h3>
-                  <span class="experience-period">
-                    <i class="fa-regular fa-calendar"></i>
-                    2016 - 2018
-                  </span>
-                </div>
-                <p class="experience-company">InsightfulMetrics</p>
-              </div>
-              <div class="experience-content">
-                <p class="experience-description">Analyzed large datasets to identify trends and provide actionable insights. Created automated reporting systems that saved 20 hours of manual work weekly.</p>
-                <div class="skills-list">
-                  <span class="skill-tag">Python</span>
-                  <span class="skill-tag">R</span>
-                  <span class="skill-tag">SQL</span>
-                  <span class="skill-tag">Excel</span>
-                  <span class="skill-tag">Power BI</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="data-side-right"></div>
+          <div class="data-side-left"></div>
         </div>
-      </section>
-      
-      <!-- Projects Section -->
-      <section id="projects" class="projects">
-        <div class="container">
-          <div class="section-header">
-            <div class="badge">
-              <div class="badge-content">
-                <i class="fa-solid fa-network-wired"></i>
-                Neural Networks
-              </div>
-            </div>
-            
-            <h2 class="section-title">
-              <span class="gradient-text">Data Science</span> Projects
-            </h2>
-            
-            <p class="section-description">
-              Explore my portfolio of AI and machine learning projects leveraging
-              cutting-edge algorithms and deep learning architectures.
-            </p>
-          </div>
-          
-          <div class="projects-grid">
-            <!-- Project Card 1 -->
-            <div class="project-card">
-              <div class="project-image">
-                <div class="project-image-overlay"></div>
-                <div class="project-badge">Neural Networks</div>
-                <div class="project-icon">
-                  <i class="fa-solid fa-brain"></i>
-                </div>
-                <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5" alt="Neural Network Project" />
-                <div class="scanning-line"></div>
-              </div>
-              <div class="project-content">
-                <h3 class="project-title">Predictive Analytics Engine</h3>
-                <p class="project-description">Advanced neural network model for predicting customer behavior based on historical interaction data.</p>
-                <div class="project-footer">
-                  <div class="project-tags">
-                    <span class="tag">TensorFlow</span>
-                    <span class="tag">Python</span>
-                  </div>
-                  <a href="#" class="project-link" aria-label="View Project">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="project-data-flow"></div>
-            </div>
-            
-            <!-- Project Card 2 -->
-            <div class="project-card">
-              <div class="project-image">
-                <div class="project-image-overlay"></div>
-                <div class="project-badge">Computer Vision</div>
-                <div class="project-icon">
-                  <i class="fa-solid fa-eye"></i>
-                </div>
-                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" alt="Computer Vision Project" />
-                <div class="scanning-line"></div>
-              </div>
-              <div class="project-content">
-                <h3 class="project-title">Image Recognition System</h3>
-                <p class="project-description">Real-time object detection system using convolutional neural networks with 98% accuracy.</p>
-                <div class="project-footer">
-                  <div class="project-tags">
-                    <span class="tag">PyTorch</span>
-                    <span class="tag">OpenCV</span>
-                  </div>
-                  <a href="#" class="project-link" aria-label="View Project">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="project-data-flow"></div>
-            </div>
-            
-            <!-- Project Card 3 -->
-            <div class="project-card">
-              <div class="project-image">
-                <div class="project-image-overlay"></div>
-                <div class="project-badge">NLP</div>
-                <div class="project-icon">
-                  <i class="fa-solid fa-message"></i>
-                </div>
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="NLP Project" />
-                <div class="scanning-line"></div>
-              </div>
-              <div class="project-content">
-                <h3 class="project-title">Sentiment Analysis Tool</h3>
-                <p class="project-description">Advanced NLP model that analyzes customer feedback across multiple channels to identify sentiment patterns.</p>
-                <div class="project-footer">
-                  <div class="project-tags">
-                    <span class="tag">BERT</span>
-                    <span class="tag">NLP</span>
-                  </div>
-                  <a href="#" class="project-link" aria-label="View Project">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="project-data-flow"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <!-- Certificates Section -->
-      <section id="certificates" class="certificates">
-        <div class="container">
-          <div class="section-header">
-            <div class="badge">
-              <div class="badge-content">
-                <i class="fa-solid fa-graduation-cap"></i>
-                Professional Credentials
-              </div>
-            </div>
-            
-            <h2 class="section-title">
-              <span class="gradient-text">Professional</span> Certifications
-            </h2>
-            
-            <p class="section-description">
-              Industry-recognized certifications demonstrating expertise in advanced data science 
-              methodologies, machine learning algorithms, and AI technologies.
-            </p>
-          </div>
-          
-          <div class="certificates-grid">
-            <!-- Certificate Card 1 -->
-            <div class="certificate-card">
-              <div class="certificate-image">
-                <img src="https://www.shutterstock.com/image-vector/data-science-deep-learning-artificial-260nw-2419302263.jpg" alt="Data Science Professional Certificate" />
-                <div class="certificate-avatar">DS</div>
-              </div>
-              <div class="certificate-content">
-                <div class="certificate-icon-wrapper">
-                  <i class="fa-solid fa-badge-check"></i>
-                </div>
-                <div class="certificate-info">
-                  <h3 class="certificate-title">Data Science Professional Certificate</h3>
-                  <p class="certificate-meta">
-                    <span class="certificate-issuer">RPS Bussiness Solution</span>
-                    <span class="certificate-date">2024</span>
-                  </p>
-                </div>
-                <a href="https://drive.google.com/file/d/1zlpbHTD6u5biohvmzy0gLmLgnmjbuHWC/view?usp=sharing" target="_blank" class="certificate-link">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-              </div>
-            </div>
-            
-            <!-- Certificate Card 2 -->
-            <div class="certificate-card">
-              <div class="certificate-image">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmjH02IH40ldwjjoWujtOknnuGgBOfktlRmkdmIsvJBmdzQiYmBX1vM3Jzp6YOyFT6Jpw&usqp=CAU" alt="AI Certificate" />
-                <div class="certificate-avatar">GL</div>
-              </div>
-              <div class="certificate-content">
-                <div class="certificate-icon-wrapper">
-                  <i class="fa-solid fa-graduation-cap"></i>
-                </div>
-                <div class="certificate-info">
-                  <h3 class="certificate-title">AI</h3>
-                  <p class="certificate-meta">
-                    <span class="certificate-issuer">Great Learning Academy</span>
-                    <span class="certificate-date">2024</span>
-                  </p>
-                </div>
-                <a href="https://drive.google.com/file/d/14ZUsnS2HosuRft6oFV3ox5ZtEeHeuBdA/view?usp=sharing" target="_blank" class="certificate-link">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-              </div>
-            </div>
-            
-            <!-- Certificate Card 3 -->
-            <div class="certificate-card">
-              <div class="certificate-image">
-                <img src="https://cdn-icons-png.flaticon.com/256/4413/4413458.png" alt="Deep Learning Fundamentals" />
-                <div class="certificate-avatar">GL</div>
-              </div>
-              <div class="certificate-content">
-                <div class="certificate-icon-wrapper">
-                  <i class="fa-solid fa-file-check"></i>
-                </div>
-                <div class="certificate-info">
-                  <h3 class="certificate-title">Deep Learning Fundamentals</h3>
-                  <p class="certificate-meta">
-                    <span class="certificate-issuer">Great Learning Academy</span>
-                    <span class="certificate-date">2024</span>
-                  </p>
-                </div>
-                <a href="https://drive.google.com/file/d/15f72qSqiADvJEIxMO-y37UG_1TRUoP7Q/view?usp=sharing" target="_blank" class="certificate-link">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-              </div>
-            </div>
-            
-            <!-- Certificate Card 4 -->
-            <div class="certificate-card">
-              <div class="certificate-image">
-                <img src="https://static-00.iconduck.com/assets.00/python-icon-512x512-rv6f5bcf.png" alt="Python for Data Science" />
-                <div class="certificate-avatar">GL</div>
-              </div>
-              <div class="certificate-content">
-                <div class="certificate-icon-wrapper">
-                  <i class="fa-solid fa-award"></i>
-                </div>
-                <div class="certificate-info">
-                  <h3 class="certificate-title">Python for Data Science</h3>
-                  <p class="certificate-meta">
-                    <span class="certificate-issuer">Great Learning Academy</span>
-                    <span class="certificate-date">2024</span>
-                  </p>
-                </div>
-                <a href="https://drive.google.com/file/d/1V2kPbvfRs36lGzoox3zM7SNZuPc4UmhL/view?usp=sharing" target="_blank" class="certificate-link">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <!-- Contact Section -->
-      <section id="contact" class="contact">
-        <div class="container">
-          <div class="contact-card">
-            <div class="contact-icon">
-              <i class="fa-solid fa-brain"></i>
-            </div>
-            
-            <h2 class="contact-title">Neural <span class="text-blue">Connections</span></h2>
-            
-            <p class="contact-description">
-              Interested in collaborating on machine learning projects or discussing
-              advanced data science methodologies? Let's connect.
-            </p>
-            
-            <div class="contact-links">
-              <a href="https://github.com/poojajaiswa" target="_blank" rel="noopener noreferrer" class="contact-link">
-                <div class="contact-icon-wrapper">
-                  <i class="fab fa-github"></i>
-                </div>
-                <span>GitHub</span>
-              </a>
-              
-              <a href="https://www.linkedin.com/in/poojajaiswal88/" target="_blank" rel="noopener noreferrer" class="contact-link">
-                <div class="contact-icon-wrapper">
-                  <i class="fab fa-linkedin-in"></i>
-                </div>
-                <span>LinkedIn</span>
-              </a>
-              
-              <a href="mailto:iampoojajaiswal7440@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-link">
-                <div class="contact-icon-wrapper">
-                  <i class="far fa-envelope"></i>
-                </div>
-                <span>Email</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    
-    <footer class="footer">
-      <div class="container">
-        <p>© <span id="current-year"></span> Advanced Data Science Portfolio. All rights reserved.</p>
       </div>
-    </footer>
-    
-    <script src="script.js"></script>
-  </body>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <div class="badge-content">
+              <i class="fas fa-briefcase"></i>
+              Work History
+            </div>
+          </div>
+          <h2 class="section-title">Professional <span class="text-gradient">Experience</span></h2>
+          <p class="section-description">
+            A track record of success in data science, machine learning, and AI roles across industries.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline">
+            <div class="timeline-item" data-year="2023">
+              <div class="timeline-content">
+                <h3 class="job-title">Senior Data Scientist</h3>
+                <p class="company-name">TechCorp AI</p>
+                <p class="job-duration">2023 - Present</p>
+                <ul class="job-description">
+                  <li>Lead a team of 5 data scientists on predictive modeling projects</li>
+                  <li>Developed a real-time recommendation engine increasing conversions by 34%</li>
+                  <li>Implemented NLP algorithms for customer sentiment analysis</li>
+                </ul>
+                <div class="tech-stack">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">TensorFlow</span>
+                  <span class="tech-badge">AWS</span>
+                  <span class="tech-badge">Kubernetes</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-year="2021">
+              <div class="timeline-content">
+                <h3 class="job-title">Machine Learning Engineer</h3>
+                <p class="company-name">DataVision Labs</p>
+                <p class="job-duration">2021 - 2023</p>
+                <ul class="job-description">
+                  <li>Designed and implemented computer vision models for autonomous systems</li>
+                  <li>Optimized ML pipelines reducing inference time by 40%</li>
+                  <li>Collaborated with product teams to integrate ML capabilities</li>
+                </ul>
+                <div class="tech-stack">
+                  <span class="tech-badge">PyTorch</span>
+                  <span class="tech-badge">Docker</span>
+                  <span class="tech-badge">GCP</span>
+                  <span class="tech-badge">OpenCV</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-year="2019">
+              <div class="timeline-content">
+                <h3 class="job-title">Data Analyst</h3>
+                <p class="company-name">AnalyticsHub</p>
+                <p class="job-duration">2019 - 2021</p>
+                <ul class="job-description">
+                  <li>Analyzed large datasets to extract business insights</li>
+                  <li>Created interactive dashboards for executive decision making</li>
+                  <li>Implemented statistical models for trend forecasting</li>
+                </ul>
+                <div class="tech-stack">
+                  <span class="tech-badge">R</span>
+                  <span class="tech-badge">SQL</span>
+                  <span class="tech-badge">Tableau</span>
+                  <span class="tech-badge">Power BI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <div class="badge-content">
+              <i class="fas fa-network-wired"></i>
+              Neural Networks
+            </div>
+          </div>
+          <h2 class="section-title">
+            <span class="text-gradient">Data Science</span> Projects
+          </h2>
+          <p class="section-description">
+            Explore my portfolio of AI and machine learning projects leveraging
+            cutting-edge algorithms and deep learning architectures.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3 class="project-title">Neural Network Forecasting</h3>
+            </div>
+            <p class="project-description">
+              Deep learning model for financial market predictions with 87% accuracy using LSTM architecture.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">TensorFlow</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Time Series</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+            <div class="project-data-flow"></div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3 class="project-title">Predictive Analytics Dashboard</h3>
+            </div>
+            <p class="project-description">
+              Interactive visualization platform with real-time data processing and anomaly detection.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">D3.js</span>
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Node.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+            <div class="project-data-flow"></div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h3 class="project-title">NLP Sentiment Analyzer</h3>
+            </div>
+            <p class="project-description">
+              BERT-based model for analyzing customer feedback and social media sentiment with 92% accuracy.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">BERT</span>
+              <span class="tech-badge">HuggingFace</span>
+              <span class="tech-badge">PyTorch</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+            <div class="project-data-flow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <div class="badge-content">
+              <i class="fas fa-certificate"></i>
+              Credentials
+            </div>
+          </div>
+          <h2 class="section-title">
+            Professional <span class="text-gradient">Certifications</span>
+          </h2>
+          <p class="section-description">
+            Ongoing professional development and specialized training in data science and AI.
+          </p>
+        </div>
+
+        <div class="certificates-grid">
+          <!-- Certificate 1 -->
+          <div class="certificate-card">
+            <div class="certificate-badge">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="certificate-content">
+              <h3 class="certificate-title">TensorFlow Developer Certificate</h3>
+              <p class="certificate-issuer">Google</p>
+              <p class="certificate-date">2023</p>
+              <p class="certificate-description">
+                Advanced machine learning model design and deployment using TensorFlow.
+              </p>
+            </div>
+          </div>
+
+          <!-- Certificate 2 -->
+          <div class="certificate-card">
+            <div class="certificate-badge">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="certificate-content">
+              <h3 class="certificate-title">AWS Certified Machine Learning</h3>
+              <p class="certificate-issuer">Amazon Web Services</p>
+              <p class="certificate-date">2022</p>
+              <p class="certificate-description">
+                Designing and implementing ML solutions on AWS cloud infrastructure.
+              </p>
+            </div>
+          </div>
+
+          <!-- Certificate 3 -->
+          <div class="certificate-card">
+            <div class="certificate-badge">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="certificate-content">
+              <h3 class="certificate-title">Deep Learning Specialization</h3>
+              <p class="certificate-issuer">DeepLearning.AI</p>
+              <p class="certificate-date">2021</p>
+              <p class="certificate-description">
+                Comprehensive training in neural network architectures and applications.
+              </p>
+            </div>
+          </div>
+
+          <!-- Certificate 4 -->
+          <div class="certificate-card">
+            <div class="certificate-badge">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="certificate-content">
+              <h3 class="certificate-title">Data Science Professional</h3>
+              <p class="certificate-issuer">Microsoft</p>
+              <p class="certificate-date">2020</p>
+              <p class="certificate-description">
+                End-to-end data science solutions using Microsoft Azure tools.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <div class="badge-content">
+              <i class="fas fa-envelope"></i>
+              Get In Touch
+            </div>
+          </div>
+          <h2 class="section-title">
+            Let's <span class="text-gradient">Connect</span>
+          </h2>
+          <p class="section-description">
+            Have a project in mind or want to discuss data science opportunities? Reach out!
+          </p>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-form-container">
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your Email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Subject" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+
+              <button type="submit" class="submit-button">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-content">
+                <h3 class="info-title">Location</h3>
+                <p class="info-detail">San Francisco, CA</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h3 class="info-title">Email</h3>
+                <p class="info-detail">contact@datasci.ai</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="info-content">
+                <h3 class="info-title">Phone</h3>
+                <p class="info-detail">+1 (555) 123-4567</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-medium"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="current-year"></span> Advanced Data Science Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
